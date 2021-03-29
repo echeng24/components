@@ -1,0 +1,425 @@
+/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+html, body {
+    text-align: center;
+    }
+    p {text-align: left;}
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(https://www.html.am/templates/downloads/bryantsmith/spacerace/background.jpg) no-repeat;
+        background-color:#000000;
+        background-position:center top;
+        background-attachment:fixed;
+        text-align: left;
+        font-family: Helvetica, Arial,  sans-serif;
+        font-size: 13px;
+        color: #F1F5F8;
+    }
+    *
+    {
+      margin: 0 auto 0 auto;
+     text-align:left;}
+    
+    
+    html, body {
+    text-align: center;
+    }
+    p {text-align: left;}
+
+    .nav-links li
+    {
+      display: inline-block;
+      list-style: none;
+    }
+    
+    .nav {
+      height: 50px;
+      width: 100%;
+      background-color: #4d4d4d;
+      position: relative;
+    }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 22px;
+      color: #fff;
+      padding: 10px 10px 10px 10px;
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+    
+    .nav > .nav-links > a {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+    
+    .nav > .nav-links > a:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav > #nav-check {
+      display: none;
+    }
+    
+    @media (max-width:600px) {
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav-links li
+      {
+      display: block;
+      list-style: none;
+      text-align: center;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+    }
+    .modal
+    {
+      background-color: gray;
+      width: 100%;
+      height: 20vh;
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden;
+      margin-top: auto;
+
+    }
+   
+    #modal:target 
+    {
+     opacity: 1;
+     visibility: visible; 
+    }
+    .modal-content
+    {
+      width: 100%;
+      position: absolute;
+
+
+    }
+    .modal-heading
+    {
+      text-align: center;
+      color: darkblue;
+    }
+    .modal-paragraph
+    {
+      text-align: center;
+    }
+    .marquee
+    {
+      width: 100%;
+      background-color: orangered;
+      overflow: hidden;
+    }
+    .marquee-content
+    {
+      display: flex;
+      height: 100%;
+      animation: scrolling 10s linear infinite;
+    }
+    .carousel{
+      background-color: blue;
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin: 115px auto;
+    }
+    
+   .carousel .container
+   {
+     display: flex;
+     height: 300px;
+     width: 300px;
+     overflow-y: hidden;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory;
+   }
+   .carousel .container .item
+   {
+     flex: 0 0 300px;
+     width: 300px;
+     display: inline-flex;
+     justify-content: center;
+
+   }
+    @keyframes scrolling
+    {
+      0% {transform: translateX(80vw);}
+      100%{transform: translateX(-100vw);}
+    }
+    a:link, a:visited
+    {
+      text-decoration: none;
+    }
+    .modal-close
+    {
+      position: absolute;
+      font-size: 2em;
+      top: 0.5em;
+      right: 0.5em;
+    }
+    #page
+    {
+      margin: 0 auto 0 auto; 
+      margin-top:10px;
+      display: block; 
+      height:auto;
+      position: relative; 
+      overflow: hidden; 
+      width: 742px;
+    }
+    
+    #top
+    {
+    height:35px;
+    float:right;
+    clear:both;
+    }
+    
+    #top img
+    {
+    padding-left:15px;
+    padding-right:15px;
+    float:right;
+    }
+    
+    
+    
+    #header
+    {
+    background-image:url(https://www.html.am/templates/downloads/bryantsmith/spacerace/header.png);
+    background-repeat:no-repeat;
+    height:155px;
+    width:742px;
+    display:block;
+    clear:both;
+    }
+    
+    #header h1
+    {
+    position:relative;
+    margin-left:20px;
+    padding-top:7px;
+    color:#000000;
+    text-align:center;
+    font-size:47px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+
+    
+    
+    #content
+    {
+    width:742px;
+    clear:both;
+    }
+    
+    #content .content_top
+    {
+    background-image:url(https://www.html.am/templates/downloads/bryantsmith/spacerace/content_top.png);
+    background-repeat:no-repeat;
+    height:82px;
+    width:742px;
+    }
+    
+    #content .content_top h1
+    {
+    padding-top:23px;
+    text-align:center;
+    font-size:32px;
+    }
+    
+    
+    #content .content_instance
+    {
+    width:742px;
+    height:300px;
+    clear:both;
+    background-image:url(https://www.html.am/templates/downloads/bryantsmith/spacerace/content_back.png);
+    background-repeat:repeat-x;
+    }
+    
+    #content .content_instance_big h2
+    {
+    font-size:26px;
+    color:#000000;
+    padding-left:10px;
+    padding-right:10px;
+    
+    }
+    
+    #content .content_instance_big p
+    {
+    font-size:16px;
+    color:#000000;
+    padding-left:10px;
+    padding-right:10px;
+    }
+    
+    a img
+    {
+    border:none;
+    }
+    
+    
+    #content .content_instance_big
+    {
+    padding-top:10px;
+    width:742px;
+    height:auto;
+    clear:both;
+    background-image:url(https://www.html.am/templates/downloads/bryantsmith/spacerace/content_back.png);
+    background-repeat:repeat-x;
+    }
+    
+    
+    
+    #content .content_instance img
+    {
+    width:300px;
+    height:177px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:30px;
+    margin-right:15px;
+    float:left;
+    clear:none;
+    }
+    
+    #content .content_instance .content_right
+    {
+    margin-top:30px;
+    width:385px;
+    float:left;
+    }
+    #content .content_instance .content_right p
+    {
+    text-align:justify;
+    font-size:14px;
+    line-height:16px;
+    color:#000000;
+    }
+    
+    #content .content_instance  h2
+    {
+    color:#000000;
+    padding-bottom:7px;
+    }
+    
+    .links
+    {
+    width:722px;
+    height:40px;
+    font-size:14px;
+    font-weight:bold;
+    color:#FFFFFF;
+    line-height:40px;
+    text-align:center;
+    padding-right:20px;
+    }
+    
+    .links a, .links a:visited
+    {
+    font-size:14px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#E9EEF3;
+    background-color:#000000;
+    padding:3px;
+    }
+    
+    .links a:hover
+    {
+    color:#FFFFFF;
+    background-color:#333333;
+    }
+    
+    #footer
+    {
+    text-align:center;
+    width:inherit;
+    color:#E6E6E6;
+    font-size:11px;
+    }
+    
+    #footer a, #footer a:visited
+    {
+    color:#FFFFFF;
+    }
+    .carousel
+    {
+height: 400px;
+    }
+    .carouseltext
+    {
+       line-height:400px;
+        text-align:center;
+      color:red;
+      font-size:50px;
+    }
+    .text
+    {
+       color:red;
+    }
+    
+    
